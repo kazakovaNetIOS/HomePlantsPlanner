@@ -7,39 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FFE67B582368E90200657412 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE67B572368E90200657412 /* AppDelegate.swift */; };
-		FFE67B5A2368E90200657412 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE67B592368E90200657412 /* SceneDelegate.swift */; };
-		FFE67B5F2368E90200657412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE67B5D2368E90200657412 /* Main.storyboard */; };
-		FFE67B612368E90400657412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE67B602368E90400657412 /* Assets.xcassets */; };
-		FFE67B642368E90400657412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE67B622368E90400657412 /* LaunchScreen.storyboard */; };
-		FFE67B732368EA7E00657412 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE67B6C2368EA7D00657412 /* Plant.swift */; };
-		FFE67B742368EA7E00657412 /* PlantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE67B6E2368EA7D00657412 /* PlantsViewModel.swift */; };
-		FFE67B752368EA7E00657412 /* PlantTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE67B6F2368EA7D00657412 /* PlantTableViewCellViewModel.swift */; };
-		FFE67B762368EA7E00657412 /* PlantsTableViewCellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE67B712368EA7E00657412 /* PlantsTableViewCellViewModelType.swift */; };
-		FFE67B772368EA7E00657412 /* PlantsTableViewViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE67B722368EA7E00657412 /* PlantsTableViewViewModelType.swift */; };
-		FFE67B7B2368EB2C00657412 /* PlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE67B792368EB2C00657412 /* PlantsViewController.swift */; };
-		FFE67B7C2368EB2C00657412 /* PlantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE67B7A2368EB2C00657412 /* PlantTableViewCell.swift */; };
+		FF5EECEA23648C0900391697 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5EECE923648C0900391697 /* AppDelegate.swift */; };
+		FF5EECEC23648C0900391697 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5EECEB23648C0900391697 /* SceneDelegate.swift */; };
+		FF5EECEE23648C0900391697 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5EECED23648C0900391697 /* ViewController.swift */; };
+		FF5EECF123648C0900391697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5EECEF23648C0900391697 /* Main.storyboard */; };
+		FF5EECF323648C1200391697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5EECF223648C1200391697 /* Assets.xcassets */; };
+		FF5EECF623648C1200391697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5EECF423648C1200391697 /* LaunchScreen.storyboard */; };
+		FF5EECFE23648EC000391697 /* PlantTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF5EECFD23648EC000391697 /* PlantTypes.plist */; };
+		FF5EED0123648F6B00391697 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5EED0023648F6B00391697 /* Plant.swift */; };
+		FF5EED05236494DD00391697 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5EED04236494DD00391697 /* AppCoordinator.swift */; };
+		FF5EED07236497A000391697 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5EED06236497A000391697 /* Coordinator.swift */; };
+		FF5EED09236498D500391697 /* PlantsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5EED08236498D500391697 /* PlantsCoordinator.swift */; };
+		FF5EED0C2364998F00391697 /* PlantsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5EED0B2364998F00391697 /* PlantsManager.swift */; };
+		FF5EED0E236499EF00391697 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5EED0D236499EF00391697 /* Manager.swift */; };
+		FF5EED1223649BBB00391697 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF5EED1023649BBB00391697 /* Model.xcdatamodeld */; };
+		FF5EED152364A20D00391697 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5EED142364A20D00391697 /* Extensions.swift */; };
+		FF5EED192364A2CC00391697 /* PlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5EED182364A2CC00391697 /* PlantsViewController.swift */; };
+		FF5EED1B2364A30300391697 /* PlantsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5EED1A2364A30300391697 /* PlantsViewController.storyboard */; };
+		FF959EDC2364E17400E4C5EF /* PlantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF959EDB2364E17400E4C5EF /* PlantViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FFE67B542368E90200657412 /* HomePlantsPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomePlantsPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFE67B572368E90200657412 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FFE67B592368E90200657412 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FFE67B5E2368E90200657412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FFE67B602368E90400657412 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FFE67B632368E90400657412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FFE67B652368E90400657412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FFE67B6C2368EA7D00657412 /* Plant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
-		FFE67B6E2368EA7D00657412 /* PlantsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantsViewModel.swift; sourceTree = "<group>"; };
-		FFE67B6F2368EA7D00657412 /* PlantTableViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantTableViewCellViewModel.swift; sourceTree = "<group>"; };
-		FFE67B712368EA7E00657412 /* PlantsTableViewCellViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantsTableViewCellViewModelType.swift; sourceTree = "<group>"; };
-		FFE67B722368EA7E00657412 /* PlantsTableViewViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantsTableViewViewModelType.swift; sourceTree = "<group>"; };
-		FFE67B792368EB2C00657412 /* PlantsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantsViewController.swift; sourceTree = "<group>"; };
-		FFE67B7A2368EB2C00657412 /* PlantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantTableViewCell.swift; sourceTree = "<group>"; };
+		FF5EECE623648C0900391697 /* HomePlantsPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomePlantsPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5EECE923648C0900391697 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF5EECEB23648C0900391697 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF5EECED23648C0900391697 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF5EECF023648C0900391697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF5EECF223648C1200391697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF5EECF523648C1200391697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF5EECF723648C1200391697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF5EECFD23648EC000391697 /* PlantTypes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PlantTypes.plist; sourceTree = "<group>"; };
+		FF5EED0023648F6B00391697 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		FF5EED04236494DD00391697 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		FF5EED06236497A000391697 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		FF5EED08236498D500391697 /* PlantsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsCoordinator.swift; sourceTree = "<group>"; };
+		FF5EED0B2364998F00391697 /* PlantsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsManager.swift; sourceTree = "<group>"; };
+		FF5EED0D236499EF00391697 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		FF5EED1123649BBB00391697 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		FF5EED142364A20D00391697 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FF5EED182364A2CC00391697 /* PlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewController.swift; sourceTree = "<group>"; };
+		FF5EED1A2364A30300391697 /* PlantsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlantsViewController.storyboard; sourceTree = "<group>"; };
+		FF959EDB2364E17400E4C5EF /* PlantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FFE67B512368E90200657412 /* Frameworks */ = {
+		FF5EECE323648C0900391697 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,84 +61,130 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FFE67B4B2368E90200657412 = {
+		FF5EECDD23648C0900391697 = {
 			isa = PBXGroup;
 			children = (
-				FFE67B562368E90200657412 /* HomePlantsPlanner */,
-				FFE67B552368E90200657412 /* Products */,
+				FF5EECE823648C0900391697 /* HomePlantsPlanner */,
+				FF5EECE723648C0900391697 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FFE67B552368E90200657412 /* Products */ = {
+		FF5EECE723648C0900391697 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FFE67B542368E90200657412 /* HomePlantsPlanner.app */,
+				FF5EECE623648C0900391697 /* HomePlantsPlanner.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FFE67B562368E90200657412 /* HomePlantsPlanner */ = {
+		FF5EECE823648C0900391697 /* HomePlantsPlanner */ = {
 			isa = PBXGroup;
 			children = (
-				FFE67B702368EA7E00657412 /* Protocols */,
-				FFE67B6B2368EA7D00657412 /* Model */,
-				FFE67B782368EB2C00657412 /* View */,
-				FFE67B6D2368EA7D00657412 /* ViewModel */,
-				FFE67B572368E90200657412 /* AppDelegate.swift */,
-				FFE67B592368E90200657412 /* SceneDelegate.swift */,
-				FFE67B5D2368E90200657412 /* Main.storyboard */,
-				FFE67B602368E90400657412 /* Assets.xcassets */,
-				FFE67B622368E90400657412 /* LaunchScreen.storyboard */,
-				FFE67B652368E90400657412 /* Info.plist */,
+				FF959EDA2364E15F00E4C5EF /* ViewModel */,
+				FF5EED162364A29100391697 /* Scenes */,
+				FF5EED132364A1ED00391697 /* Extensions */,
+				FF5EED0A2364997B00391697 /* Managers */,
+				FF5EED03236494BF00391697 /* Coordinator */,
+				FF5EECFF23648F5400391697 /* Model */,
+				FF5EECE923648C0900391697 /* AppDelegate.swift */,
+				FF5EECEB23648C0900391697 /* SceneDelegate.swift */,
+				FF5EECED23648C0900391697 /* ViewController.swift */,
+				FF5EECEF23648C0900391697 /* Main.storyboard */,
+				FF5EECF223648C1200391697 /* Assets.xcassets */,
+				FF5EECF423648C1200391697 /* LaunchScreen.storyboard */,
+				FF5EECF723648C1200391697 /* Info.plist */,
 			);
 			path = HomePlantsPlanner;
 			sourceTree = "<group>";
 		};
-		FFE67B6B2368EA7D00657412 /* Model */ = {
+		FF5EECFF23648F5400391697 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FFE67B6C2368EA7D00657412 /* Plant.swift */,
+				FF5EED0F23649BA800391697 /* CoreData */,
+				FF5EED02236490F800391697 /* Lists */,
+				FF5EED0023648F6B00391697 /* Plant.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		FFE67B6D2368EA7D00657412 /* ViewModel */ = {
+		FF5EED02236490F800391697 /* Lists */ = {
 			isa = PBXGroup;
 			children = (
-				FFE67B6E2368EA7D00657412 /* PlantsViewModel.swift */,
-				FFE67B6F2368EA7D00657412 /* PlantTableViewCellViewModel.swift */,
+				FF5EECFD23648EC000391697 /* PlantTypes.plist */,
+			);
+			path = Lists;
+			sourceTree = "<group>";
+		};
+		FF5EED03236494BF00391697 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FF5EED06236497A000391697 /* Coordinator.swift */,
+				FF5EED04236494DD00391697 /* AppCoordinator.swift */,
+				FF5EED08236498D500391697 /* PlantsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FF5EED0A2364997B00391697 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FF5EED0D236499EF00391697 /* Manager.swift */,
+				FF5EED0B2364998F00391697 /* PlantsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FF5EED0F23649BA800391697 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FF5EED1023649BBB00391697 /* Model.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		FF5EED132364A1ED00391697 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FF5EED142364A20D00391697 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FF5EED162364A29100391697 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FF5EED172364A29F00391697 /* Plants */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FF5EED172364A29F00391697 /* Plants */ = {
+			isa = PBXGroup;
+			children = (
+				FF5EED182364A2CC00391697 /* PlantsViewController.swift */,
+				FF5EED1A2364A30300391697 /* PlantsViewController.storyboard */,
+			);
+			path = Plants;
+			sourceTree = "<group>";
+		};
+		FF959EDA2364E15F00E4C5EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF959EDB2364E17400E4C5EF /* PlantViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		FFE67B702368EA7E00657412 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				FFE67B712368EA7E00657412 /* PlantsTableViewCellViewModelType.swift */,
-				FFE67B722368EA7E00657412 /* PlantsTableViewViewModelType.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		FFE67B782368EB2C00657412 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				FFE67B792368EB2C00657412 /* PlantsViewController.swift */,
-				FFE67B7A2368EB2C00657412 /* PlantTableViewCell.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FFE67B532368E90200657412 /* HomePlantsPlanner */ = {
+		FF5EECE523648C0900391697 /* HomePlantsPlanner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FFE67B682368E90400657412 /* Build configuration list for PBXNativeTarget "HomePlantsPlanner" */;
+			buildConfigurationList = FF5EECFA23648C1200391697 /* Build configuration list for PBXNativeTarget "HomePlantsPlanner" */;
 			buildPhases = (
-				FFE67B502368E90200657412 /* Sources */,
-				FFE67B512368E90200657412 /* Frameworks */,
-				FFE67B522368E90200657412 /* Resources */,
+				FF5EECE223648C0900391697 /* Sources */,
+				FF5EECE323648C0900391697 /* Frameworks */,
+				FF5EECE423648C0900391697 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -134,25 +192,25 @@
 			);
 			name = HomePlantsPlanner;
 			productName = HomePlantsPlanner;
-			productReference = FFE67B542368E90200657412 /* HomePlantsPlanner.app */;
+			productReference = FF5EECE623648C0900391697 /* HomePlantsPlanner.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FFE67B4C2368E90200657412 /* Project object */ = {
+		FF5EECDE23648C0900391697 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Natalia Kazakova";
 				TargetAttributes = {
-					FFE67B532368E90200657412 = {
+					FF5EECE523648C0900391697 = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
 			};
-			buildConfigurationList = FFE67B4F2368E90200657412 /* Build configuration list for PBXProject "HomePlantsPlanner" */;
+			buildConfigurationList = FF5EECE123648C0900391697 /* Build configuration list for PBXProject "HomePlantsPlanner" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -160,61 +218,67 @@
 				en,
 				Base,
 			);
-			mainGroup = FFE67B4B2368E90200657412;
-			productRefGroup = FFE67B552368E90200657412 /* Products */;
+			mainGroup = FF5EECDD23648C0900391697;
+			productRefGroup = FF5EECE723648C0900391697 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FFE67B532368E90200657412 /* HomePlantsPlanner */,
+				FF5EECE523648C0900391697 /* HomePlantsPlanner */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FFE67B522368E90200657412 /* Resources */ = {
+		FF5EECE423648C0900391697 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFE67B642368E90400657412 /* LaunchScreen.storyboard in Resources */,
-				FFE67B612368E90400657412 /* Assets.xcassets in Resources */,
-				FFE67B5F2368E90200657412 /* Main.storyboard in Resources */,
+				FF5EECF623648C1200391697 /* LaunchScreen.storyboard in Resources */,
+				FF5EED1B2364A30300391697 /* PlantsViewController.storyboard in Resources */,
+				FF5EECF323648C1200391697 /* Assets.xcassets in Resources */,
+				FF5EECFE23648EC000391697 /* PlantTypes.plist in Resources */,
+				FF5EECF123648C0900391697 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FFE67B502368E90200657412 /* Sources */ = {
+		FF5EECE223648C0900391697 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFE67B772368EA7E00657412 /* PlantsTableViewViewModelType.swift in Sources */,
-				FFE67B752368EA7E00657412 /* PlantTableViewCellViewModel.swift in Sources */,
-				FFE67B732368EA7E00657412 /* Plant.swift in Sources */,
-				FFE67B582368E90200657412 /* AppDelegate.swift in Sources */,
-				FFE67B7C2368EB2C00657412 /* PlantTableViewCell.swift in Sources */,
-				FFE67B742368EA7E00657412 /* PlantsViewModel.swift in Sources */,
-				FFE67B5A2368E90200657412 /* SceneDelegate.swift in Sources */,
-				FFE67B7B2368EB2C00657412 /* PlantsViewController.swift in Sources */,
-				FFE67B762368EA7E00657412 /* PlantsTableViewCellViewModelType.swift in Sources */,
+				FF5EECEE23648C0900391697 /* ViewController.swift in Sources */,
+				FF5EED0123648F6B00391697 /* Plant.swift in Sources */,
+				FF5EED07236497A000391697 /* Coordinator.swift in Sources */,
+				FF5EED0C2364998F00391697 /* PlantsManager.swift in Sources */,
+				FF5EED09236498D500391697 /* PlantsCoordinator.swift in Sources */,
+				FF5EED05236494DD00391697 /* AppCoordinator.swift in Sources */,
+				FF5EECEA23648C0900391697 /* AppDelegate.swift in Sources */,
+				FF5EED1223649BBB00391697 /* Model.xcdatamodeld in Sources */,
+				FF5EED0E236499EF00391697 /* Manager.swift in Sources */,
+				FF959EDC2364E17400E4C5EF /* PlantViewModel.swift in Sources */,
+				FF5EED152364A20D00391697 /* Extensions.swift in Sources */,
+				FF5EED192364A2CC00391697 /* PlantsViewController.swift in Sources */,
+				FF5EECEC23648C0900391697 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FFE67B5D2368E90200657412 /* Main.storyboard */ = {
+		FF5EECEF23648C0900391697 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FFE67B5E2368E90200657412 /* Base */,
+				FF5EECF023648C0900391697 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		FFE67B622368E90400657412 /* LaunchScreen.storyboard */ = {
+		FF5EECF423648C1200391697 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FFE67B632368E90400657412 /* Base */,
+				FF5EECF523648C1200391697 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -222,7 +286,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FFE67B662368E90400657412 /* Debug */ = {
+		FF5EECF823648C1200391697 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,7 +346,7 @@
 			};
 			name = Debug;
 		};
-		FFE67B672368E90400657412 /* Release */ = {
+		FF5EECF923648C1200391697 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -336,7 +400,7 @@
 			};
 			name = Release;
 		};
-		FFE67B692368E90400657412 /* Debug */ = {
+		FF5EECFB23648C1200391697 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -354,7 +418,7 @@
 			};
 			name = Debug;
 		};
-		FFE67B6A2368E90400657412 /* Release */ = {
+		FF5EECFC23648C1200391697 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -375,25 +439,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FFE67B4F2368E90200657412 /* Build configuration list for PBXProject "HomePlantsPlanner" */ = {
+		FF5EECE123648C0900391697 /* Build configuration list for PBXProject "HomePlantsPlanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FFE67B662368E90400657412 /* Debug */,
-				FFE67B672368E90400657412 /* Release */,
+				FF5EECF823648C1200391697 /* Debug */,
+				FF5EECF923648C1200391697 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FFE67B682368E90400657412 /* Build configuration list for PBXNativeTarget "HomePlantsPlanner" */ = {
+		FF5EECFA23648C1200391697 /* Build configuration list for PBXNativeTarget "HomePlantsPlanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FFE67B692368E90400657412 /* Debug */,
-				FFE67B6A2368E90400657412 /* Release */,
+				FF5EECFB23648C1200391697 /* Debug */,
+				FF5EECFC23648C1200391697 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF5EED1023649BBB00391697 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF5EED1123649BBB00391697 /* Model.xcdatamodel */,
+			);
+			currentVersion = FF5EED1123649BBB00391697 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = FFE67B4C2368E90200657412 /* Project object */;
+	rootObject = FF5EECDE23648C0900391697 /* Project object */;
 }

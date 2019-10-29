@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  HomePlantsPlanner
 //
-//  Created by Natalia Kazakova on 30.10.2019.
+//  Created by Natalia Kazakova on 26.10.2019.
 //  Copyright © 2019 Natalia Kazakova. All rights reserved.
 //
 
