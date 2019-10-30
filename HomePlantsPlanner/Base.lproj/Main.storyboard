@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9zv-hm-jhD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jud-kD-FdF">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14868"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Plants View Controller-->
+        <!--Plants Table View Controller-->
         <scene sceneID="X8c-jG-vJg">
             <objects>
-                <tableViewController id="9zv-hm-jhD" customClass="PlantsViewController" customModule="HomePlantsPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="9zv-hm-jhD" customClass="PlantsTableViewController" customModule="HomePlantsPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jFo-si-TTT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,10 +48,63 @@
                             <outlet property="delegate" destination="9zv-hm-jhD" id="9SL-iE-9Ym"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="h3M-Ry-u3e"/>
+                    <connections>
+                        <segue destination="N9N-fy-Ssp" kind="show" identifier="plantDetailSegue" id="WT0-Sp-k2u"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehh-cG-w9N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-29" y="126"/>
+            <point key="canvasLocation" x="879.71014492753625" y="125.89285714285714"/>
+        </scene>
+        <!--Plant Detail View Controller-->
+        <scene sceneID="eT7-59-XOw">
+            <objects>
+                <viewController id="N9N-fy-Ssp" customClass="PlantDetailViewController" customModule="HomePlantsPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T8M-Pr-TIX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1N-WR-xMf">
+                                <rect key="frame" x="186" y="464.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="E1N-WR-xMf" firstAttribute="centerY" secondItem="5FL-hp-a8W" secondAttribute="centerY" id="2fo-Jf-NSg"/>
+                            <constraint firstItem="E1N-WR-xMf" firstAttribute="centerX" secondItem="5FL-hp-a8W" secondAttribute="centerX" id="Sm6-6Z-kNI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5FL-hp-a8W"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iH7-M9-fK3"/>
+                    <connections>
+                        <outlet property="typeLabel" destination="E1N-WR-xMf" id="hfm-w6-VSI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uLm-KN-wRP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1662" y="126"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2VC-5G-UM7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jud-kD-FdF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BX1-U4-bMx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9zv-hm-jhD" kind="relationship" relationship="rootViewController" id="SSr-pJ-fAy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r1R-R7-UUF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-30.434782608695656" y="125.89285714285714"/>
         </scene>
     </scenes>
 </document>

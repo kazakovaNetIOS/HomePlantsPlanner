@@ -11,4 +11,6 @@ import Foundation
 protocol PlantsTableViewViewModelType {
     func numberOfRows() -> Int
     func cellViewModel(forIndexPath indexPath: IndexPath) -> PlantsTableViewCellViewModelType?
+    func viewModelForSelectedRow() -> PlantDetailViewModelType?
+    func selectRow(atIndexPath indexPath: IndexPath)
 }

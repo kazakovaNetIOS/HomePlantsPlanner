@@ -10,17 +10,12 @@ import Foundation
 
 class PlantsViewModel {
     
-    var plants: [Plant]
-    var count: Int {
-        return plants.count
-    }
+    private var selectedIndexPath: IndexPath?
     
-    init() {
-        self.plants = [
-            Plant(type: "1"),
-            Plant(type: "2"),
-            Plant(type: "3")]
-    }
+    var plants: [Plant] = [
+        Plant(type: "1"),
+        Plant(type: "2"),
+        Plant(type: "3")]
 }
 
 //MARK: - PlantsTableViewModelType
@@ -34,5 +29,14 @@ extension PlantsViewModel: PlantsTableViewViewModelType {
     
     func numberOfRows() -> Int {
         return plants.count
-    }   
+    }
+    
+    func viewModelForSelectedRow() -> PlantDetailViewModelType? {
+        guard let selectedIndexPath = selectedIndexPath else { return nil }
+        return PlantDetailViewModel(plant: plants[selectedIndexPath.row])
+    }
+    
+    func selectRow(atIndexPath indexPath: IndexPath) {
+        self.selectedIndexPath = indexPath
+    }
 }

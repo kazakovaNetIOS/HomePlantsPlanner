@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlantsViewController: UITableViewController {
+class PlantsTableViewController: UITableViewController {
     
     var viewModel: PlantsTableViewViewModelType?
 }
@@ -16,7 +16,7 @@ class PlantsViewController: UITableViewController {
 //MARK: - LifeCycle
 /***************************************************************/
 
-extension PlantsViewController {
+extension PlantsTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,7 +27,7 @@ extension PlantsViewController {
 //MARK: - TableViewDataSource
 /***************************************************************/
 
-extension PlantsViewController {
+extension PlantsTableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel?.numberOfRows() ?? 0
     }
@@ -42,8 +42,30 @@ extension PlantsViewController {
         tableViewCell.viewModel = cellViewModel
         
         return tableViewCell
+    }    
+}
+
+//MARK: - TableViewDelegate
+/***************************************************************/
+
+extension PlantsTableViewController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let viewModel = viewModel else { return }
+        viewModel.selectRow(atIndexPath: indexPath)
+        performSegue(withIdentifier: "plantDetailSegue", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier,
+            let viewModel = viewModel else { return }
+        
+        if identifier == "plantDetailSegue",
+            let dvc = segue.destination as? PlantDetailViewController {
+            dvc.viewModel = viewModel.viewModelForSelectedRow()
+        }
     }
 }
+
 
 //MARK: - StoryboardInstantiable
 /***************************************************************/

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF91AFB1236A135700D76F10 /* PlantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF91AFB0236A135700D76F10 /* PlantDetailViewController.swift */; };
+		FF91AFB3236A189500D76F10 /* PlantDetailViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF91AFB2236A189500D76F10 /* PlantDetailViewModelType.swift */; };
+		FF91AFB5236A1F3B00D76F10 /* PlantDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF91AFB4236A1F3B00D76F10 /* PlantDetailViewModel.swift */; };
 		FFE67B582368E90200657412 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE67B572368E90200657412 /* AppDelegate.swift */; };
 		FFE67B5A2368E90200657412 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE67B592368E90200657412 /* SceneDelegate.swift */; };
 		FFE67B5F2368E90200657412 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE67B5D2368E90200657412 /* Main.storyboard */; };
@@ -17,11 +20,14 @@
 		FFE67B752368EA7E00657412 /* PlantTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE67B6F2368EA7D00657412 /* PlantTableViewCellViewModel.swift */; };
 		FFE67B762368EA7E00657412 /* PlantsTableViewCellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE67B712368EA7E00657412 /* PlantsTableViewCellViewModelType.swift */; };
 		FFE67B772368EA7E00657412 /* PlantsTableViewViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE67B722368EA7E00657412 /* PlantsTableViewViewModelType.swift */; };
-		FFE67B7B2368EB2C00657412 /* PlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE67B792368EB2C00657412 /* PlantsViewController.swift */; };
+		FFE67B7B2368EB2C00657412 /* PlantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE67B792368EB2C00657412 /* PlantsTableViewController.swift */; };
 		FFE67B7C2368EB2C00657412 /* PlantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE67B7A2368EB2C00657412 /* PlantTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF91AFB0236A135700D76F10 /* PlantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailViewController.swift; sourceTree = "<group>"; };
+		FF91AFB2236A189500D76F10 /* PlantDetailViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailViewModelType.swift; sourceTree = "<group>"; };
+		FF91AFB4236A1F3B00D76F10 /* PlantDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailViewModel.swift; sourceTree = "<group>"; };
 		FFE67B542368E90200657412 /* HomePlantsPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomePlantsPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE67B572368E90200657412 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFE67B592368E90200657412 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,7 +40,7 @@
 		FFE67B6F2368EA7D00657412 /* PlantTableViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		FFE67B712368EA7E00657412 /* PlantsTableViewCellViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantsTableViewCellViewModelType.swift; sourceTree = "<group>"; };
 		FFE67B722368EA7E00657412 /* PlantsTableViewViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantsTableViewViewModelType.swift; sourceTree = "<group>"; };
-		FFE67B792368EB2C00657412 /* PlantsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantsViewController.swift; sourceTree = "<group>"; };
+		FFE67B792368EB2C00657412 /* PlantsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantsTableViewController.swift; sourceTree = "<group>"; };
 		FFE67B7A2368EB2C00657412 /* PlantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlantTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +101,7 @@
 			children = (
 				FFE67B6E2368EA7D00657412 /* PlantsViewModel.swift */,
 				FFE67B6F2368EA7D00657412 /* PlantTableViewCellViewModel.swift */,
+				FF91AFB4236A1F3B00D76F10 /* PlantDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -104,6 +111,7 @@
 			children = (
 				FFE67B712368EA7E00657412 /* PlantsTableViewCellViewModelType.swift */,
 				FFE67B722368EA7E00657412 /* PlantsTableViewViewModelType.swift */,
+				FF91AFB2236A189500D76F10 /* PlantDetailViewModelType.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -111,8 +119,9 @@
 		FFE67B782368EB2C00657412 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FFE67B792368EB2C00657412 /* PlantsViewController.swift */,
+				FFE67B792368EB2C00657412 /* PlantsTableViewController.swift */,
 				FFE67B7A2368EB2C00657412 /* PlantTableViewCell.swift */,
+				FF91AFB0236A135700D76F10 /* PlantDetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,11 +200,14 @@
 				FFE67B772368EA7E00657412 /* PlantsTableViewViewModelType.swift in Sources */,
 				FFE67B752368EA7E00657412 /* PlantTableViewCellViewModel.swift in Sources */,
 				FFE67B732368EA7E00657412 /* Plant.swift in Sources */,
+				FF91AFB1236A135700D76F10 /* PlantDetailViewController.swift in Sources */,
 				FFE67B582368E90200657412 /* AppDelegate.swift in Sources */,
 				FFE67B7C2368EB2C00657412 /* PlantTableViewCell.swift in Sources */,
 				FFE67B742368EA7E00657412 /* PlantsViewModel.swift in Sources */,
+				FF91AFB5236A1F3B00D76F10 /* PlantDetailViewModel.swift in Sources */,
 				FFE67B5A2368E90200657412 /* SceneDelegate.swift in Sources */,
-				FFE67B7B2368EB2C00657412 /* PlantsViewController.swift in Sources */,
+				FF91AFB3236A189500D76F10 /* PlantDetailViewModelType.swift in Sources */,
+				FFE67B7B2368EB2C00657412 /* PlantsTableViewController.swift in Sources */,
 				FFE67B762368EA7E00657412 /* PlantsTableViewCellViewModelType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
