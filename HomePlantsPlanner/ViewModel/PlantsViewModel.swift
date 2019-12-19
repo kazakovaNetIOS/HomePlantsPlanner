@@ -13,9 +13,9 @@ class PlantsViewModel {
     private var selectedIndexPath: IndexPath?
     
     var plants: [Plant] = [
-        Plant(type: "1"),
-        Plant(type: "2"),
-        Plant(type: "3")]
+        Plant(type: "1", height: 1.3),
+        Plant(type: "2", height: 0.3),
+        Plant(type: "3", height: 0.7)]
 }
 
 //MARK: - PlantsTableViewModelType

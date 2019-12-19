@@ -12,8 +12,11 @@ class PlantDetailViewModel {
     
     private var plant: Plant
     
+    var height: Box<Double?> = Box(nil)
+    
     init(plant: Plant) {
         self.plant = plant
+        self.height.value = plant.height
     }
 }
 

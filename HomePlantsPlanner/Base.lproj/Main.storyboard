@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jud-kD-FdF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jud-kD-FdF">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,14 +17,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="plantCell" id="tQQ-wW-nJo" customClass="PlantTableViewCell" customModule="HomePlantsPlanner" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="53"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="53.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tQQ-wW-nJo" id="OrN-6h-wE7">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="53.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="am6-k0-jC6">
-                                            <rect key="frame" x="16" y="16" width="37.5" height="21"/>
+                                            <rect key="frame" x="16" y="16" width="37.5" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -32,7 +32,7 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="am6-k0-jC6" secondAttribute="bottom" constant="16" id="A4l-vl-Pth"/>
-                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="am6-k0-jC6" secondAttribute="trailing" id="ayc-xk-zc0"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="am6-k0-jC6" secondAttribute="trailing" constant="20" symbolic="YES" id="G9W-jv-ngL"/>
                                         <constraint firstItem="am6-k0-jC6" firstAttribute="leading" secondItem="OrN-6h-wE7" secondAttribute="leading" constant="16" id="csd-Ff-Aki"/>
                                         <constraint firstItem="am6-k0-jC6" firstAttribute="centerY" secondItem="OrN-6h-wE7" secondAttribute="centerY" id="gh9-d4-AEk"/>
                                         <constraint firstItem="am6-k0-jC6" firstAttribute="top" secondItem="OrN-6h-wE7" secondAttribute="top" constant="16" id="meU-Ml-Jpl"/>
@@ -65,8 +65,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1N-WR-xMf">
-                                <rect key="frame" x="186" y="464.5" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1N-WR-xMf">
+                                <rect key="frame" x="16" y="120" width="46.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2SE-6B-AZW">
+                                <rect key="frame" x="16" y="160" width="51" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -74,13 +80,18 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="E1N-WR-xMf" firstAttribute="centerY" secondItem="5FL-hp-a8W" secondAttribute="centerY" id="2fo-Jf-NSg"/>
-                            <constraint firstItem="E1N-WR-xMf" firstAttribute="centerX" secondItem="5FL-hp-a8W" secondAttribute="centerX" id="Sm6-6Z-kNI"/>
+                            <constraint firstItem="5FL-hp-a8W" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2SE-6B-AZW" secondAttribute="trailing" constant="16" id="Dtu-S1-2KN"/>
+                            <constraint firstItem="E1N-WR-xMf" firstAttribute="leading" secondItem="5FL-hp-a8W" secondAttribute="leading" constant="16" id="N2i-WO-YVj"/>
+                            <constraint firstItem="5FL-hp-a8W" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="E1N-WR-xMf" secondAttribute="trailing" constant="16" id="Ni3-wv-wsO"/>
+                            <constraint firstItem="2SE-6B-AZW" firstAttribute="top" secondItem="E1N-WR-xMf" secondAttribute="bottom" constant="16" id="bwe-uJ-xZB"/>
+                            <constraint firstItem="E1N-WR-xMf" firstAttribute="top" secondItem="5FL-hp-a8W" secondAttribute="top" constant="32" id="n8P-fI-5Xf"/>
+                            <constraint firstItem="2SE-6B-AZW" firstAttribute="leading" secondItem="5FL-hp-a8W" secondAttribute="leading" constant="16" id="utx-FY-gqi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5FL-hp-a8W"/>
                     </view>
                     <navigationItem key="navigationItem" id="iH7-M9-fK3"/>
                     <connections>
+                        <outlet property="heightLabel" destination="2SE-6B-AZW" id="DxY-Um-7EX"/>
                         <outlet property="typeLabel" destination="E1N-WR-xMf" id="hfm-w6-VSI"/>
                     </connections>
                 </viewController>

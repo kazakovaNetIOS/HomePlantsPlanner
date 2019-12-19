@@ -10,4 +10,5 @@ import Foundation
 
 struct Plant {
     let type: String
+    let height: Double
 }

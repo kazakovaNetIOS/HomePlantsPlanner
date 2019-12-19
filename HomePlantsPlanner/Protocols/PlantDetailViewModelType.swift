@@ -10,5 +10,5 @@ import Foundation
 
 protocol PlantDetailViewModelType {
     var type: String { get }
-    
+    var height: Box<Double?> { get }
 }
